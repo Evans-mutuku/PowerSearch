@@ -5,6 +5,7 @@ const userCardContainer = document.querySelector("[data-user-cards-container]");
 let users = [];
 
 fetch("https://jsonplaceholder.typicode.com/users")
+  // comment 
   .then((res) => res.json())
   .then((data) => {
     users = data.map((user) => {
